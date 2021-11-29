@@ -1,1 +1,31 @@
 header.header
+    header.header-2
+      .logo
+        img.logo__link(src=" ../img/Logo (1).svg")
+      nav.nav
+        nav.navbar
+          a(href='#' class='nav__link') HOME
+          a(href='#' class='nav__link') FEATURE
+          a(href='#' class='nav__link') PRICING
+          a(href='#' class='nav__link') TEAM
+          a(href='#' class='nav__link') BLOG
+          a(href='#' class='nav__link') CONTACT
+      .buttons
+        button.btn-2 Get the App
+      button.hamburger.hamburger--spring(type='button')
+        span.hamburger-box
+          span.hamburger-inner  
+
+script.
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var navbar = document.querySelector(".navbar");
+  // On click
+  hamburger.addEventListener("click", function() {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  navbar.classList.toggle("is-active");
+  // Do something else, like open/close menu
+  });
+
+
