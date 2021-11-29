@@ -11,20 +11,45 @@ header.header
           a(href='#' class='nav__link') BLOG
           a(href='#' class='nav__link') CONTACT
       .buttons
-        button.btn-2 Get the App
+        button.btn-1 GET THE APP 
       button.hamburger.hamburger--spring(type='button')
         span.hamburger-box
           span.hamburger-inner  
+    .flex-1
+      .header__block
+        .header__block-title
+          .flex-1 
+            h3.block-tit__app APP 
+            h3.block-tit__nest NEST 
+          .flex-2 
+            h3.block-tit__best BEST MOBILE 
+        h3.block-tit__page APP LANDING PAGE
+        p.header__block-parag Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum voluptas, similique ullam facere deleniti saepe illum a.
+        .block__buttons 
+          .block__btn-1  
+            img(src="../img/Apple.svg").btn-1__icon 
+            .btn-info 
+              .btn-text DOWNLOAD FROM
+              .btn-name  APPLE STORE
+          .block__btn-2   
+            img(src="../img/Play store.png").btn-1__icon 
+            .btn-info 
+              .btn-text DOWNLOAD FROM
+              .btn-name  PLAY STORE
+      .header__smart-img 
+        img.smart-image(src="../img/iphone.png", alt="")
 
 script.
   // Look for .hamburger
   var hamburger = document.querySelector(".hamburger");
   var navbar = document.querySelector(".navbar");
+  var buttons  = document.querySelector(".buttons");
   // On click
   hamburger.addEventListener("click", function() {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
   navbar.classList.toggle("is-active");
+  buttons.classList.toggle("is-active");
   // Do something else, like open/close menu
   });
 
